@@ -1,6 +1,5 @@
 ﻿
 init -7 python in rhythm_game:
-    
 
 
     class GameLogic(renpy.Displayable, _BasicInheritable):
@@ -176,10 +175,7 @@ init -7 python in rhythm_game:
 
 
     _game = GameLogic("songMaps")
-    
-    
-    #  https://osu.ppy.sh/wiki/ru/Client/File_formats/Osu_%28file_format%29#hit-objects
-    
+
 
 screen choice_song(game_object):
     

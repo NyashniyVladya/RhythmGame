@@ -139,6 +139,7 @@ init -8 python in rhythm_game:
             return self.__dest_align[1]
 
         
+    # https://osu.ppy.sh/wiki/ru/Client/File_formats/Osu_%28file_format%29
     class _HitObject(_BasicInheritable):
 
         class TypeFlags(enum.IntFlag):
@@ -377,7 +378,7 @@ init -8 python in rhythm_game:
         def hit_time(self):
             if self.__hit_time is None:
                 od = min(max(self.OD, .0), 12.)
-                self.__hit_time = 100. - (6. * od)
+                self.__hit_time = 80. - (6. * od)
             return self.__hit_time
 
         @property

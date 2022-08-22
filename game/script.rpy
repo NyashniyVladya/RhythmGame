@@ -1,6 +1,7 @@
 ﻿
 label start:
 
+
     while True:
 
         scene expression "#888"
